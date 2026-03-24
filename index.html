@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanzlei Kuleci — Rechtsanwalt Arbeitsrecht & Familienrecht Aachen</title>
+    <meta name="description" content="Kanzlei Kuleci in Aachen: Kompetente Rechtsberatung im Arbeitsrecht und Familienrecht. Persönlich, engagiert, ergebnisorientiert. Jetzt Erstgespräch vereinbaren.">
+    <meta property="og:title" content="Kanzlei Kuleci — Arbeitsrecht & Familienrecht Aachen">
+    <meta property="og:description" content="Persönliche Rechtsberatung die wirklich weiterbringt. Arbeitsrecht & Familienrecht in Aachen.">
+    <meta property="og:image" content="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/kanzlei-kuleci-arbeitsrecht-familienrecht-aachen-logo.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/kanzlei-kuleci-arbeitsrecht-familienrecht-aachen-logo-klein.png">
+    <link rel="apple-touch-icon" href="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/kanzlei-kuleci-arbeitsrecht-familienrecht-aachen-logo-klein.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* === HEADLINE SAFETY === */
+        h1, h2, h3, h4, h5, h6,
+        .hero-title, .section-title, .headline,
+        [class*="title"], [class*="heading"] {
+            word-spacing: normal !important;
+            white-space: normal;
+            overflow-wrap: break-word;
+            text-rendering: optimizeLegibility;
+        }
+        h1 span, h2 span, h3 span,
+        .hero-title span, .section-title span {
+            display: inline;
+            word-spacing: normal;
+        }
+        .word-reveal span {
+            display: inline-block;
+            margin-right: 0.25em;
+        }
+        .word-reveal span:last-child {
+            margin-right: 0;
+        }
+        /* === END HEADLINE SAFETY === */
+
+        :root {
+            --bg-primary: #0F1219;
+            --bg-secondary: #161B26;
+            --bg-card: #1C2233;
+            --bg-elevated: #232A3B;
+            --gold: #C8975C;
+            --gold-light: #DEBB8A;
+            --gold-dark: #A67A42;
+            --cream: #F0EAE0;
+            --cream-muted: #B8B0A4;
+            --text-primary: #EDEAE5;
+            --text-secondary: #9A9590;
+            --text-muted: #6B6560;
+            --accent-red: #C45B4A;
+            --accent-green: #5BA67A;
+            --border: rgba(200, 151, 92, 0.12);
+            --border-strong: rgba(200, 151, 92, 0.25);
+            --glow: rgba(200, 151, 92, 0.06);
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            scrollbar-color: var(--gold-dark) var(--bg-primary);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-weight: 300;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === GRAIN OVERLAY === */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* === NAVIGATION === */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0 clamp(1.5rem, 4vw, 4rem);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav.scrolled {
+            background: rgba(15, 18, 25, 0.92);
+            backdrop-filter: blur(20px) saturate(1.5);
+            -webkit-backdrop-filter: blur(20px) saturate(1.5);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            max-width: 1320px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .nav.scrolled .nav-inner { height: 64px; }
+        .nav-logo img {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+            transition: height 0.4s ease;
+        }
+        .nav.scrolled .nav-logo img { height: 36px; }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-links a:hover { color: var(--gold-light); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+        }
+        .nav-cta:hover {
+            background: var(--gold);
+            color: var(--bg-primary) !important;
+        }
+        .nav-cta::after { display: none !important; }
+        .nav-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .nav-phone i { width: 14px; height: 14px; color: var(--gold); }
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--cream);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: clamp(6rem, 12vh, 10rem) clamp(2rem, 6vw, 6rem);
+            padding-right: clamp(2rem, 4vw, 4rem);
+            position: relative;
+            z-index: 2;
+        }
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2rem;
+        }
+        .hero-eyebrow::before {
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+        }
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.4rem, 4.5vw, 4rem);
+            font-weight: 400;
+            line-height: 1.15;
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+        .hero-sub {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 2rem;
+            background: var(--gold);
+            color: var(--bg-primary);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(200, 151, 92, 0.3);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 2rem;
+            background: transparent;
+            color: var(--cream);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid var(--border-strong);
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold-light);
+        }
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .hero-trust-item i { color: var(--gold); width: 16px; height: 16px; }
+        .hero-stars {
+            display: flex;
+            gap: 2px;
+        }
+        .hero-stars i { color: var(--gold); width: 14px; height: 14px; }
+
+        .hero-image {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to right, var(--bg-primary) 0%, transparent 30%),
+                        linear-gradient(to top, var(--bg-primary) 0%, transparent 20%);
+        }
+        .hero-golden-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+        }
+
+        /* === SECTION STYLES === */
+        .section {
+            padding: clamp(4rem, 8vh, 7rem) clamp(1.5rem, 4vw, 4rem);
+        }
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+        }
+        .section-label::before {
+            content: '';
+            width: 28px;
+            height: 1px;
+            background: var(--gold);
+        }
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            max-width: 700px;
+        }
+        .section-title em {
+            font-style: italic;
+            color: var(--gold);
+        }
+        .section-sub {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            max-width: 560px;
+            line-height: 1.8;
+        }
+        .golden-divider {
+            width: 60px;
+            height: 1px;
+            background: var(--gold);
+            margin: 2rem 0;
+        }
+
+        /* === PROBLEM SECTION === */
+        .problem-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        .problem-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .problem-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            padding: 1rem 1.2rem;
+            border-radius: 4px;
+            border: 1px solid transparent;
+            transition: all 0.4s ease;
+        }
+        .problem-list li:hover {
+            background: var(--glow);
+            border-color: var(--border);
+        }
+        .problem-list li i {
+            color: var(--accent-red);
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .problem-quote {
+            position: relative;
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .problem-quote::before {
+            content: '„';
+            font-family: var(--font-display);
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: 0.5rem;
+            left: 1.5rem;
+            line-height: 1;
+        }
+        .problem-quote p {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--cream);
+            position: relative;
+            z-index: 1;
+        }
+        .problem-quote cite {
+            display: block;
+            margin-top: 1.5rem;
+            font-style: normal;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            color: var(--gold);
+        }
+
+        /* === SIGNATURE FEATURE: RECHTS-FINDER === */
+        .finder-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .finder-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .finder-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .finder-card {
+            position: relative;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        .finder-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .finder-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-strong);
+            background: var(--bg-elevated);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .finder-card:hover::before { transform: scaleX(1); }
+        .finder-card.active {
+            border-color: var(--gold);
+            background: var(--bg-elevated);
+        }
+        .finder-card.active::before { transform: scaleX(1); }
+        .finder-card-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(200, 151, 92, 0.08);
+            border-radius: 50%;
+            margin-bottom: 1.2rem;
+        }
+        .finder-card-icon i { color: var(--gold); width: 22px; height: 22px; }
+        .finder-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 0.6rem;
+        }
+        .finder-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .finder-result {
+            margin-top: 2rem;
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--gold);
+            border-radius: 4px;
+            display: none;
+            animation: fadeSlideUp 0.5s ease forwards;
+        }
+        .finder-result.visible { display: block; }
+        .finder-result h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .finder-result p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .finder-result ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        .finder-result ul li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+        .finder-result ul li i { color: var(--accent-green); width: 16px; height: 16px; }
+
+        /* === RECHTSGEBIETE === */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .practice-card {
+            position: relative;
+            padding: 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+        .practice-card:hover {
+            border-color: var(--border-strong);
+            transform: translateY(-3px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.25);
+        }
+        .practice-card-number {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            opacity: 0.08;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            line-height: 1;
+        }
+        .practice-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+        .practice-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .practice-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .practice-tag {
+            padding: 0.35rem 0.9rem;
+            background: rgba(200, 151, 92, 0.06);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--cream-muted);
+            letter-spacing: 0.02em;
+        }
+        .practice-card .btn-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            transition: gap 0.3s ease;
+        }
+        .practice-card .btn-text:hover { gap: 0.8rem; }
+        .practice-card .btn-text i { width: 16px; height: 16px; }
+
+        /* === WARUM WIR === */
+        .why-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .why-card {
+            padding: 2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .why-card:hover {
+            border-color: var(--border-strong);
+            background: var(--bg-card);
+        }
+        .why-card-num {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--gold);
+            opacity: 0.4;
+            margin-bottom: 1rem;
+        }
+        .why-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: var(--cream);
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        .why-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* === PROZESS === */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            margin-top: 3rem;
+            position: relative;
+        }
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: var(--border-strong);
+        }
+        .process-step {
+            text-align: center;
+            padding: 0 1.5rem;
+            position: relative;
+        }
+        .process-step-num {
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-strong);
+            border-radius: 50%;
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--gold);
+            position: relative;
+            z-index: 2;
+            transition: all 0.4s ease;
+        }
+        .process-step:hover .process-step-num {
+            border-color: var(--gold);
+            background: rgba(200, 151, 92, 0.08);
+            transform: scale(1.08);
+        }
+        .process-step h3 {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: var(--cream);
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+        .process-step p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* === TEAM === */
+        .team-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        .team-photo {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .team-photo img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 4px;
+        }
+        .team-photo::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(to top, var(--bg-secondary), transparent);
+        }
+        .team-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--cream);
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        .team-info .team-role {
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .team-info blockquote {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-style: italic;
+            line-height: 1.7;
+            color: var(--cream-muted);
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--gold);
+            margin-bottom: 2rem;
+        }
+        .team-info p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .team-members {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .team-member-small {
+            text-align: center;
+        }
+        .team-member-small .member-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--gold);
+        }
+        .team-member-small span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* === TESTIMONIALS === */
+        .testimonials-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .testimonials-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(ellipse, var(--glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .testimonial-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+        .testimonial-rating {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .testimonial-rating .stars {
+            display: flex;
+            gap: 2px;
+        }
+        .testimonial-rating .stars i { color: var(--gold); width: 18px; height: 18px; }
+        .testimonial-rating span {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--cream);
+            font-weight: 600;
+        }
+        .testimonial-rating small {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .testimonial-track {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.4s ease;
+        }
+        .testimonial-card:hover {
+            border-color: var(--border-strong);
+            transform: translateY(-3px);
+        }
+        .testimonial-card .tc-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 1rem;
+        }
+        .testimonial-card .tc-stars i { color: var(--gold); width: 14px; height: 14px; }
+        .testimonial-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+            font-style: italic;
+        }
+        .testimonial-card cite {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-style: normal;
+            font-size: 0.85rem;
+            color: var(--cream);
+            font-weight: 500;
+        }
+        .testimonial-card cite .tc-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(200, 151, 92, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            color: var(--gold);
+        }
+        .testimonial-card cite small {
+            display: block;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 300;
+        }
+
+        /* === CTA BAND === */
+        .cta-band {
+            padding: clamp(3rem, 6vh, 5rem) clamp(1.5rem, 4vw, 4rem);
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-band::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+        }
+        .cta-band h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
+            color: var(--bg-primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        .cta-band p {
+            color: rgba(15, 18, 25, 0.7);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .btn-dark {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 1rem 2.5rem;
+            background: var(--bg-primary);
+            color: var(--gold);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .btn-dark:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        /* === KONTAKT === */
+        .contact-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        .contact-info-block {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .contact-detail {
+            display: flex;
+            gap: 1rem;
+        }
+        .contact-detail-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(200, 151, 92, 0.08);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .contact-detail-icon i { color: var(--gold); width: 18px; height: 18px; }
+        .contact-detail h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--cream);
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        .contact-detail p, .contact-detail a {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            line-height: 1.6;
+        }
+        .contact-detail a:hover { color: var(--gold); }
+        .contact-hours {
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .contact-hours h4 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .contact-hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            font-size: 0.85rem;
+        }
+        .contact-hours-row span:first-child { color: var(--text-secondary); }
+        .contact-hours-row span:last-child { color: var(--cream); }
+        .contact-form {
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .contact-form h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .contact-form > p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--cream-muted);
+            margin-bottom: 0.4rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            outline: none;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-group select { appearance: none; cursor: pointer; }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .form-consent {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            margin: 1.5rem 0;
+        }
+        .form-consent input[type="checkbox"] {
+            width: auto;
+            margin-top: 3px;
+            accent-color: var(--gold);
+        }
+        .form-consent label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: none;
+            letter-spacing: 0;
+            line-height: 1.5;
+        }
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        .form-success.visible { display: block; }
+        .form-success i { color: var(--accent-green); width: 48px; height: 48px; margin-bottom: 1rem; }
+        .form-success h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--cream);
+            margin-bottom: 0.5rem;
+        }
+        .form-success p { color: var(--text-secondary); }
+
+        /* === FOOTER === */
+        .footer {
+            padding: 4rem clamp(1.5rem, 4vw, 4rem) 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .footer-brand img {
+            height: 56px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 280px;
+        }
+        .footer-memberships {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .footer-memberships img {
+            height: 40px;
+            width: auto;
+            opacity: 0.5;
+            filter: grayscale(1);
+            transition: all 0.3s ease;
+        }
+        .footer-memberships img:hover {
+            opacity: 0.8;
+            filter: grayscale(0);
+        }
+        .footer-col h4 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+        .footer-col a:hover { color: var(--gold); }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .footer-legal a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .footer-legal a:hover { color: var(--gold); }
+
+        /* === LEGAL OVERLAYS === */
+        .legal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .legal-overlay.visible { display: flex; }
+        .legal-content {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 3rem;
+        }
+        .legal-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--cream);
+            margin-bottom: 2rem;
+        }
+        .legal-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--cream);
+            margin: 1.5rem 0 0.5rem;
+        }
+        .legal-content p, .legal-content li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 0.8rem;
+        }
+        .legal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--cream);
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        /* === COOKIE BANNER === */
+        .cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1.2rem 2rem;
+            z-index: 9998;
+            max-width: 600px;
+            width: calc(100% - 3rem);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .cookie-banner.visible { display: flex; align-items: center; gap: 1.5rem; }
+        .cookie-banner p {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            flex: 1;
+        }
+        .cookie-banner p a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+        .cookie-btn {
+            padding: 0.6rem 1.2rem;
+            background: var(--gold);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 2px;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        /* === ANIMATIONS === */
+        @keyframes fadeSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* === MOBILE === */
+        @media (max-width: 1024px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(15, 18, 25, 0.98);
+                backdrop-filter: blur(20px);
+                padding: 2rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+            }
+            .hero-content {
+                padding: 7rem 1.5rem 3rem;
+                order: 2;
+            }
+            .hero-image {
+                height: 50vh;
+                order: 1;
+            }
+            .hero-image::after {
+                background: linear-gradient(to top, var(--bg-primary) 5%, transparent 50%);
+            }
+            .hero h1 { font-size: 2rem; }
+            .hero-trust { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .hero-actions { flex-direction: column; }
+            .hero-actions a, .hero-actions button { width: 100%; justify-content: center; }
+
+            .problem-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .finder-cards { grid-template-columns: 1fr; }
+            .practice-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .process-steps::before { display: none; }
+            .team-grid { grid-template-columns: 1fr; }
+            .team-photo img { height: 350px; }
+            .testimonial-track { grid-template-columns: 1fr; }
+            .testimonial-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            .cookie-banner.visible { flex-direction: column; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .process-steps { grid-template-columns: 1fr; }
+            .footer-top { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- === NAVIGATION === -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+            <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/kanzlei-kuleci-arbeitsrecht-familienrecht-aachen-logo.png" alt="Kanzlei Kuleci Logo – Arbeitsrecht und Familienrecht Aachen">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#rechtsgebiete">Rechtsgebiete</a></li>
+            <li><a href="#warum">Warum wir</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#bewertungen">Bewertungen</a></li>
+            <li><a href="tel:+49241505065" class="nav-phone"><i data-lucide="phone"></i> 0241 505065</a></li>
+            <li><a href="#kontakt" class="nav-cta">Erstgespräch vereinbaren</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- === HERO === -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <span class="hero-eyebrow">Kanzlei Kuleci · Aachen</span>
+        <h1 class="word-reveal">Kündigung auf dem Tisch. Scheidung im Raum. <em>Und jetzt?</em></h1>
+        <p class="hero-sub">In den Momenten, in denen es wirklich darauf ankommt, brauchst du keine Standard-Beratung — sondern jemanden, der zuhört, versteht und mit Nachdruck für dein Recht kämpft.</p>
+        <div class="hero-actions">
+            <a href="#kontakt" class="btn-primary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Jetzt Erstgespräch anfragen</a>
+            <a href="tel:+49241505065" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> 0241 505065</a>
+        </div>
+        <div class="hero-trust">
+            <div class="hero-trust-item">
+                <div class="hero-stars">
+                    <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                </div>
+                <span>4.9 / 5 — 56 Bewertungen</span>
+            </div>
+            <div class="hero-trust-item">
+                <i data-lucide="shield-check"></i>
+                <span>Fachanwältin Familienrecht</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/elisenbrunnen-aachener-innenstadt-2.jpg" alt="Elisenbrunnen in der Aachener Innenstadt – Kanzlei Kuleci, zentral in Aachen">
+    </div>
+    <div class="hero-golden-line"></div>
+</section>
+
+<!-- === PROBLEM === -->
+<section class="section problem-section" id="problem">
+    <div class="section-inner">
+        <div class="problem-grid">
+            <div class="reveal">
+                <span class="section-label">Kennst du das?</span>
+                <h2 class="section-title">Wenn sich alles <em>auf einmal</em> ändert</h2>
+                <div class="golden-divider"></div>
+                <ul class="problem-list">
+                    <li><i data-lucide="alert-circle"></i>Du hast eine Kündigung erhalten und weißt nicht, ob sie überhaupt wirksam ist</li>
+                    <li><i data-lucide="alert-circle"></i>Die Trennung steht im Raum — und mit ihr tausend Fragen zu Unterhalt, Kindern, Zukunft</li>
+                    <li><i data-lucide="alert-circle"></i>Dein Arbeitgeber setzt dich unter Druck — Aufhebungsvertrag, Abmahnung, Versetzung</li>
+                    <li><i data-lucide="alert-circle"></i>Du brauchst jemanden, der die Lage ehrlich einschätzt — und dann handelt</li>
+                </ul>
+            </div>
+            <div class="problem-quote reveal">
+                <p>Mir ist es wichtig, meine Mandanten wirklich interessengerecht zu vertreten: das kann bedeuten, vor Gericht zu gehen, aber auch nachhaltige außergerichtliche Lösungen zu finden — ganz wie es die Situation erfordert.</p>
+                <cite>— Rechtsanwältin Ebru Kuleci</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === SIGNATURE FEATURE: RECHTS-FINDER === -->
+<section class="section finder-section" id="finder">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Dein erster Schritt</span>
+            <h2 class="section-title">Was beschäftigt dich <em>gerade?</em></h2>
+            <p class="section-sub">Wähle deine Situation — und erfahre sofort, wie wir dir helfen können.</p>
+        </div>
+        <div class="finder-cards reveal">
+            <div class="finder-card" data-topic="kuendigung" onclick="showFinderResult('kuendigung')">
+                <div class="finder-card-icon"><i data-lucide="file-x"></i></div>
+                <h3>Kündigung erhalten</h3>
+                <p>Fristlose oder ordentliche Kündigung, Aufhebungsvertrag, Abfindung — deine Rechte als Arbeitnehmer.</p>
+            </div>
+            <div class="finder-card" data-topic="arbeitsrecht" onclick="showFinderResult('arbeitsrecht')">
+                <div class="finder-card-icon"><i data-lucide="briefcase"></i></div>
+                <h3>Problem am Arbeitsplatz</h3>
+                <p>Abmahnung, Diskriminierung, Arbeitszeugnis, Teilzeit, Elternzeit — alles rund ums Arbeitsverhältnis.</p>
+            </div>
+            <div class="finder-card" data-topic="familie" onclick="showFinderResult('familie')">
+                <div class="finder-card-icon"><i data-lucide="heart"></i></div>
+                <h3>Trennung oder Scheidung</h3>
+                <p>Unterhalt, Sorgerecht, Ehevertrag, Zugewinn — wenn es um Familie geht, brauchst du sensible Kompetenz.</p>
+            </div>
+        </div>
+
+        <div class="finder-result" id="result-kuendigung">
+            <h3>Kündigung? Nicht automatisch wirksam.</h3>
+            <p>Viele Kündigungen sind rechtlich angreifbar — aber nur innerhalb von 3 Wochen per Kündigungsschutzklage. Je schneller du handelst, desto besser deine Chancen auf Weiterbeschäftigung oder eine angemessene Abfindung.</p>
+            <ul>
+                <li><i data-lucide="check"></i> Prüfung der Kündigungswirksamkeit</li>
+                <li><i data-lucide="check"></i> Kündigungsschutzklage innerhalb der Frist</li>
+                <li><i data-lucide="check"></i> Verhandlung von Abfindungen</li>
+                <li><i data-lucide="check"></i> Aufhebungsverträge strategisch gestalten</li>
+                <li><i data-lucide="check"></i> Sonderkündigungsschutz (Schwangerschaft, Betriebsrat, Schwerbehinderung)</li>
+            </ul>
+            <a href="#kontakt" class="btn-primary"><i data-lucide="clock" style="width:16px;height:16px"></i> Jetzt schnell handeln — Erstgespräch anfragen</a>
+        </div>
+        <div class="finder-result" id="result-arbeitsrecht">
+            <h3>Deine Rechte am Arbeitsplatz — wir setzen sie durch.</h3>
+            <p>Ob Abmahnung, Diskriminierung, befristeter Vertrag oder Streit um Elternzeit: Im Arbeitsrecht stehst du als Arbeitnehmer nicht alleine da. Wir kennen beide Seiten — und nutzen das zu deinem Vorteil.</p>
+            <ul>
+                <li><i data-lucide="check"></i> Prüfung und Abwehr von Abmahnungen</li>
+                <li><i data-lucide="check"></i> Arbeitszeugnisse korrigieren lassen</li>
+                <li><i data-lucide="check"></i> Entgeltfortzahlung im Krankheitsfall</li>
+                <li><i data-lucide="check"></i> Diskriminierung am Arbeitsplatz (AGG)</li>
+                <li><i data-lucide="check"></i> Teilzeit, Elternzeit, befristete Verträge</li>
+            </ul>
+            <a href="#kontakt" class="btn-primary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Situation schildern — kostenloser Erstkontakt</a>
+        </div>
+        <div class="finder-result" id="result-familie">
+            <h3>Familie im Umbruch — wir geben dir Sicherheit.</h3>
+            <p>Trennung und Scheidung sind nie nur rechtliche Fragen. Als Fachanwältin für Familienrecht verbindet Ebru Kuleci juristische Kompetenz mit echtem Einfühlungsvermögen — für Lösungen, die langfristig funktionieren.</p>
+            <ul>
+                <li><i data-lucide="check"></i> Scheidungsverfahren begleiten</li>
+                <li><i data-lucide="check"></i> Trennungsunterhalt und nachehelichen Unterhalt</li>
+                <li><i data-lucide="check"></i> Sorgerecht und Umgangsrecht</li>
+                <li><i data-lucide="check"></i> Zugewinnausgleich und Versorgungsausgleich</li>
+                <li><i data-lucide="check"></i> Eheverträge aufsetzen und prüfen</li>
+            </ul>
+            <a href="#kontakt" class="btn-primary"><i data-lucide="shield" style="width:16px;height:16px"></i> Vertrauliches Erstgespräch anfragen</a>
+        </div>
+    </div>
+</section>
+
+<!-- === RECHTSGEBIETE === -->
+<section class="section" id="rechtsgebiete">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Rechtsgebiete</span>
+            <h2 class="section-title">Zwei Schwerpunkte. <em>Volle Tiefe.</em></h2>
+            <p class="section-sub">Bewusst spezialisiert auf Arbeitsrecht und Familienrecht — weil Fokus bessere Ergebnisse bringt als ein Bauchladen.</p>
+        </div>
+        <div class="practice-grid reveal">
+            <div class="practice-card">
+                <span class="practice-card-number">01</span>
+                <h3>Arbeitsrecht</h3>
+                <p>Von der Kündigung bis zum Aufhebungsvertrag, von der Abmahnung bis zum Arbeitszeugnis. Wir vertreten Arbeitnehmer und Arbeitgeber — und kennen deshalb die Argumente beider Seiten.</p>
+                <div class="practice-tags">
+                    <span class="practice-tag">Kündigungsschutz</span>
+                    <span class="practice-tag">Abfindung</span>
+                    <span class="practice-tag">Aufhebungsvertrag</span>
+                    <span class="practice-tag">Abmahnung</span>
+                    <span class="practice-tag">Elternzeit</span>
+                    <span class="practice-tag">Arbeitszeugnis</span>
+                </div>
+                <a href="#finder" class="btn-text">Dein Arbeitsrecht-Problem lösen <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="practice-card">
+                <span class="practice-card-number">02</span>
+                <h3>Familienrecht</h3>
+                <p>Scheidung, Unterhalt, Sorgerecht — wenn es um Familie geht, geht es um mehr als Paragraphen. Wir sind nicht nur fachlich kompetent, sondern auch persönlich für dich da.</p>
+                <div class="practice-tags">
+                    <span class="practice-tag">Scheidung</span>
+                    <span class="practice-tag">Unterhalt</span>
+                    <span class="practice-tag">Sorgerecht</span>
+                    <span class="practice-tag">Ehevertrag</span>
+                    <span class="practice-tag">Zugewinn</span>
+                    <span class="practice-tag">Umgangsrecht</span>
+                </div>
+                <a href="#finder" class="btn-text">Dein Familienrecht-Thema klären <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === WARUM WIR === -->
+<section class="section why-section" id="warum">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Was uns ausmacht</span>
+            <h2 class="section-title">Warum Mandanten uns <em>weiterempfehlen</em></h2>
+        </div>
+        <div class="why-grid reveal">
+            <div class="why-card">
+                <div class="why-card-num">01</div>
+                <h3>Beide Seiten kennen</h3>
+                <p>Wir vertreten im Arbeitsrecht Arbeitnehmer und Arbeitgeber. Das Wissen über die Strategien der Gegenseite ist dein Vorteil.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-num">02</div>
+                <h3>Wirklich erreichbar</h3>
+                <p>Kein Anrufbeantworter-Marathon. Mandanten bestätigen immer wieder: Bei uns ist tatsächlich jemand am Telefon.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-num">03</div>
+                <h3>Hartnäckig für dich</h3>
+                <p>Manchmal braucht es Geduld. Manchmal Nachdruck. Wir bleiben dran, bis das bestmögliche Ergebnis erreicht ist.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-num">04</div>
+                <h3>Mensch vor Paragraph</h3>
+                <p>Gerade im Familienrecht zählt nicht nur Fachwissen — sondern echtes Einfühlungsvermögen in schwierigen Momenten.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-num">05</div>
+                <h3>Ehrliche Einschätzung</h3>
+                <p>Wir versprechen nichts, was unrealistisch ist. Dafür bekommst du eine klare Analyse deiner Situation — und alle Optionen auf den Tisch.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-num">06</div>
+                <h3>Zentral in Aachen</h3>
+                <p>Oppenhoffallee 29 — mitten in der Stadt, gut erreichbar. Persönliche Beratung, kein Callcenter-Feeling.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === PROZESS === -->
+<section class="section" id="prozess">
+    <div class="section-inner">
+        <div class="reveal" style="text-align:center; margin-bottom: 1rem;">
+            <span class="section-label" style="justify-content:center;">So läuft es ab</span>
+            <h2 class="section-title" style="margin:0 auto 1rem; text-align:center;">Dein Weg zu deinem <em>Recht</em></h2>
+            <p class="section-sub" style="margin:0 auto;">Von der ersten Kontaktaufnahme bis zur Lösung — transparent und planbar.</p>
+        </div>
+        <div class="process-steps reveal">
+            <div class="process-step">
+                <div class="process-step-num">01</div>
+                <h3>Erstkontakt</h3>
+                <p>Schildere dein Anliegen per Telefon oder Formular. Dieser erste Kontakt ist kostenfrei.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-num">02</div>
+                <h3>Erstberatung</h3>
+                <p>Wir analysieren deine Situation, sichten Unterlagen und zeigen dir deine Optionen auf.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-num">03</div>
+                <h3>Strategie</h3>
+                <p>Gemeinsam legen wir die beste Vorgehensweise fest — außergerichtlich oder vor Gericht.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-step-num">04</div>
+                <h3>Umsetzung</h3>
+                <p>Wir setzen dein Recht durch — mit Nachdruck, Erfahrung und immer in Abstimmung mit dir.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === TEAM === -->
+<section class="section team-section" id="team">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Dein Team</span>
+            <h2 class="section-title">Die Menschen hinter <em>deinem Recht</em></h2>
+        </div>
+        <div class="team-grid reveal">
+            <div class="team-photo">
+                <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/ebru-kuleci-rechtsanwaeltin-arbeitsrecht-familienrecht-aachen.jpg" alt="Rechtsanwältin Ebru Kuleci – Kanzlei Kuleci Aachen" loading="lazy">
+            </div>
+            <div class="team-info">
+                <h3>Ebru Kuleci</h3>
+                <p class="team-role">Rechtsanwältin · Fachanwältin für Familienrecht · Mediatorin</p>
+                <blockquote>Mir ist es wichtig, meine Mandanten wirklich interessengerecht zu vertreten — ganz wie es die Situation erfordert.</blockquote>
+                <p>Rechtsanwältin Ebru Kuleci hat sich bewusst auf zwei Rechtsgebiete spezialisiert: Arbeitsrecht und Familienrecht. Im Arbeitsrecht vertritt sie beide Seiten — Arbeitnehmer und Arbeitgeber. Im Familienrecht bringt sie als Fachanwältin und Mediatorin neben fundiertem Fachwissen auch ein echtes Gespür für die persönliche Situation ihrer Mandanten mit.</p>
+                <p>Das Team wird ergänzt durch erfahrene Kolleginnen, die gemeinsam sicherstellen, dass jeder Fall die Aufmerksamkeit bekommt, die er verdient.</p>
+                <div class="team-members">
+                    <div class="team-member-small">
+                        <div class="member-avatar">CR</div>
+                        <span>R.A. Christina Roo</span>
+                    </div>
+                    <div class="team-member-small">
+                        <div class="member-avatar">GP</div>
+                        <span>R.A. Gabi Pathe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === TESTIMONIALS === -->
+<section class="section testimonials-section" id="bewertungen">
+    <div class="section-inner">
+        <div class="testimonial-header reveal">
+            <div>
+                <span class="section-label">Stimmen von Mandanten</span>
+                <h2 class="section-title">Was andere über uns <em>sagen</em></h2>
+            </div>
+            <div class="testimonial-rating">
+                <span>4.9</span>
+                <div>
+                    <div class="stars">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <small>56 Bewertungen auf Google</small>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-track reveal">
+            <div class="testimonial-card">
+                <div class="tc-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                <p>Frau Kuleci war zu jeder Zeit telefonisch erreichbar und hatte ein offenes Ohr. Sie arbeitete sehr eng mit mir zusammen, um mein Ziel zu erreichen. Tatkräftige, kompetente Unterstützung in Sachen Arbeitsrecht.</p>
+                <cite>
+                    <div class="tc-avatar">LS</div>
+                    <div>Lisa S. <small>Google Bewertung</small></div>
+                </cite>
+            </div>
+            <div class="testimonial-card">
+                <div class="tc-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                <p>Sie hat mich bezüglich meiner Scheidung vertreten. Ich fühlte mich in allen Bereichen sehr gut aufgehoben. Absolut kompetent und einfühlend. Ein herzensguter Mensch, der alles Machbare in die Tat umsetzt.</p>
+                <cite>
+                    <div class="tc-avatar">GP</div>
+                    <div>Gaby P. <small>Google Bewertung</small></div>
+                </cite>
+            </div>
+            <div class="testimonial-card">
+                <div class="tc-stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+                <p>Frau Kuleci war sehr hartnäckig in den Verhandlungen. Sie hat gesagt, ich soll mich gedulden. Am Ende war das Ergebnis mehr als ich erwartet habe. Arbeitsrecht und Familienrecht — beides top.</p>
+                <cite>
+                    <div class="tc-avatar">PK</div>
+                    <div>Philipp K. <small>Google Bewertung</small></div>
+                </cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === CTA BAND === -->
+<section class="cta-band">
+    <h2>3 Wochen. So kurz ist die Frist für eine Kündigungsschutzklage.</h2>
+    <p>Warte nicht zu lange. Die erste Kontaktaufnahme ist kostenfrei.</p>
+    <a href="#kontakt" class="btn-dark"><i data-lucide="arrow-right" style="width:16px;height:16px"></i> Jetzt Erstgespräch sichern</a>
+</section>
+
+<!-- === KONTAKT === -->
+<section class="section contact-section" id="kontakt">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Kontakt</span>
+            <h2 class="section-title">Lass uns über deine <em>Situation</em> sprechen</h2>
+            <p class="section-sub">Die erste Kontaktaufnahme ist kostenfrei. Schildere dein Anliegen — wir melden uns zeitnah.</p>
+        </div>
+        <div class="contact-grid reveal">
+            <div class="contact-info-block">
+                <div class="contact-detail">
+                    <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
+                    <div>
+                        <h4>Kanzlei Kuleci</h4>
+                        <p>Oppenhoffallee 29<br>52066 Aachen</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <a href="tel:+49241505065">0241 505065</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
+                    <div>
+                        <h4>E-Mail</h4>
+                        <a href="mailto:info@kanzlei-kuleci.de">info@kanzlei-kuleci.de</a>
+                    </div>
+                </div>
+                <div class="contact-hours">
+                    <h4>Sprechzeiten</h4>
+                    <div class="contact-hours-row"><span>Montag, Dienstag, Donnerstag</span><span>08:30 – 17:00</span></div>
+                    <div class="contact-hours-row"><span>Mittwoch, Freitag</span><span>08:30 – 13:00</span></div>
+                    <div class="contact-hours-row"><span>Wochenende</span><span>Geschlossen</span></div>
+                </div>
+            </div>
+            <div class="contact-form" id="contactForm">
+                <h3>Erstgespräch anfragen</h3>
+                <p>Alle Felder mit * sind Pflichtfelder.</p>
+                <form id="mainForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="DEIN_WEB3FORMS_KEY">
+                    <input type="hidden" name="subject" value="Neue Anfrage — Kanzlei Kuleci Website">
+                    <input type="hidden" name="from_name" value="Kanzlei Kuleci Website">
+                    <input type="checkbox" name="botcheck" style="display:none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Vorname *</label>
+                            <input type="text" id="fname" name="Vorname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Nachname *</label>
+                            <input type="text" id="lname" name="Nachname" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="E-Mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="Telefon">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bereich">Rechtsgebiet</label>
+                        <select id="bereich" name="Rechtsgebiet">
+                            <option value="Allgemein">Bitte wählen</option>
+                            <option value="Arbeitsrecht">Arbeitsrecht</option>
+                            <option value="Familienrecht">Familienrecht</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Dein Anliegen *</label>
+                        <textarea id="message" name="Nachricht" required placeholder="Beschreibe kurz deine Situation..."></textarea>
+                    </div>
+                    <div class="form-consent">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="#" onclick="openLegal('datenschutz'); return false;" style="color:var(--gold)">Datenschutzerklärung</a> zu. *</label>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Anfrage absenden</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <i data-lucide="check-circle"></i>
+                    <h3>Anfrage erhalten</h3>
+                    <p>Vielen Dank. Wir melden uns zeitnah bei dir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- === FOOTER === -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/05/kanzlei-kuleci-arbeitsrecht-familienrecht-aachen-logo.png" alt="Kanzlei Kuleci Logo">
+                <p>Rechtsanwaltskanzlei für Arbeitsrecht und Familienrecht. Zentral in Aachen. Persönlich, engagiert, ergebnisorientiert.</p>
+                <div class="footer-memberships">
+                    <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/12/deutscher-anwalt-verein-logo.png" alt="Deutscher Anwaltverein" loading="lazy">
+                    <img src="https://www.kanzlei-kuleci.de/wp-content/uploads/2021/12/rechtsanwaltskammer-koeln-logo.png" alt="Rechtsanwaltskammer Köln" loading="lazy">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Rechtsgebiete</h4>
+                <a href="#rechtsgebiete">Arbeitsrecht</a>
+                <a href="#rechtsgebiete">Familienrecht</a>
+                <a href="#finder">Schnellhilfe</a>
+            </div>
+            <div class="footer-col">
+                <h4>Team</h4>
+                <a href="#team">R.A. Ebru Kuleci</a>
+                <a href="#team">R.A. Christina Roo</a>
+                <a href="#team">R.A. Gabi Pathe</a>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <a href="tel:+49241505065">0241 505065</a>
+                <a href="mailto:info@kanzlei-kuleci.de">info@kanzlei-kuleci.de</a>
+                <a href="#kontakt">Erstgespräch anfragen</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Kanzlei Kuleci. Alle Rechte vorbehalten.</span>
+            <div class="footer-legal">
+                <a href="#" onclick="openLegal('impressum'); return false;">Impressum</a>
+                <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- === IMPRESSUM OVERLAY === -->
+<div class="legal-overlay" id="impressum">
+    <button class="legal-close" onclick="closeLegal('impressum')" aria-label="Schließen"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    <div class="legal-content">
+        <h2>Impressum</h2>
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p>Kanzlei Kuleci<br>Rechtsanwältin Ebru Kuleci<br>Oppenhoffallee 29<br>52066 Aachen</p>
+        <h3>Kontakt</h3>
+        <p>Telefon: 0241 505065<br>E-Mail: info@kanzlei-kuleci.de</p>
+        <h3>Berufsbezeichnung und berufsrechtliche Regelungen</h3>
+        <p>Berufsbezeichnung: Rechtsanwältin (verliehen in der Bundesrepublik Deutschland)<br>Zuständige Kammer: Rechtsanwaltskammer Köln<br>Es gelten folgende berufsrechtliche Regelungen: Bundesrechtsanwaltsordnung (BRAO), Berufsordnung für Rechtsanwälte (BORA), Fachanwaltsordnung (FAO), Rechtsanwaltsvergütungsgesetz (RVG).</p>
+        <h3>Umsatzsteuer-ID</h3>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: [USt-IdNr. einfügen]</p>
+        <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+        <p>Rechtsanwältin Ebru Kuleci<br>Oppenhoffallee 29<br>52066 Aachen</p>
+        <h3>Streitschlichtung</h3>
+        <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <h3>Haftung für Inhalte</h3>
+        <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+    </div>
+</div>
+
+<!-- === DATENSCHUTZ OVERLAY === -->
+<div class="legal-overlay" id="datenschutz">
+    <button class="legal-close" onclick="closeLegal('datenschutz')" aria-label="Schließen"><i data-lucide="x" style="width:24px;height:24px"></i></button>
+    <div class="legal-content">
+        <h2>Datenschutzerklärung</h2>
+        <h3>1. Datenschutz auf einen Blick</h3>
+        <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+        <h3>2. Hosting</h3>
+        <p>Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+        <h3>3. Kontaktformular</h3>
+        <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung erfolgt über Web3Forms.</p>
+        <h3>4. Google Fonts</h3>
+        <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten Google Fonts. Die Google Fonts werden über einen externen Server geladen. Dabei wird Ihre IP-Adresse an den Anbieter übermittelt.</p>
+        <h3>5. Ihre Rechte</h3>
+        <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
+        <h3>6. Cookies</h3>
+        <p>Diese Website verwendet technisch notwendige Cookies für die Consent-Verwaltung. Tracking-Cookies werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt.</p>
+    </div>
+</div>
+
+<!-- === COOKIE BANNER === -->
+<div class="cookie-banner" id="cookieBanner">
+    <p>Diese Website verwendet Cookies für die grundlegende Funktionalität. <a href="#" onclick="openLegal('datenschutz'); return false;">Mehr erfahren</a></p>
+    <button class="cookie-btn" onclick="acceptCookies()">Verstanden</button>
+</div>
+
+<script>
+// === NAV SCROLL ===
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// === MOBILE MENU ===
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// === SCROLL RESTORATION ===
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => window.scrollTo(0, 0));
+
+// === REVEAL ANIMATIONS ===
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, idx) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), idx * 100);
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
+
+// === SIGNATURE FEATURE: FINDER ===
+function showFinderResult(topic) {
+    document.querySelectorAll('.finder-card').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.finder-result').forEach(r => r.classList.remove('visible'));
+    
+    document.querySelector(`.finder-card[data-topic="${topic}"]`).classList.add('active');
+    const result = document.getElementById('result-' + topic);
+    result.classList.add('visible');
+    
+    setTimeout(() => {
+        result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+    
+    lucide.createIcons();
+}
+
+// === FORM ===
+const mainForm = document.getElementById('mainForm');
+mainForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(mainForm);
+    fetch(mainForm.action, { method: 'POST', body: formData })
+    .then(res => {
+        if (res.ok) {
+            mainForm.style.display = 'none';
+            document.getElementById('formSuccess').classList.add('visible');
+            lucide.createIcons();
+        }
+    })
+    .catch(() => alert('Es gab einen Fehler. Bitte versuche es erneut oder ruf uns direkt an.'));
+});
+
+// === LEGAL ===
+function openLegal(id) {
+    document.getElementById(id).classList.add('visible');
+    document.body.style.overflow = 'hidden';
+}
+function closeLegal(id) {
+    document.getElementById(id).classList.remove('visible');
+    document.body.style.overflow = '';
+}
+document.querySelectorAll('.legal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeLegal(overlay.id);
+    });
+});
+
+// === COOKIES ===
+function acceptCookies() {
+    localStorage.setItem('cookies_accepted', 'true');
+    document.getElementById('cookieBanner').classList.remove('visible');
+}
+window.addEventListener('load', () => {
+    if (!localStorage.getItem('cookies_accepted')) {
+        setTimeout(() => {
+            document.getElementById('cookieBanner').classList.add('visible');
+        }, 2000);
+    }
+});
+
+// === SMOOTH SCROLL ===
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            const offset = nav.offsetHeight + 20;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
+    });
+});
+
+// === INIT LUCIDE ===
+lucide.createIcons();
+</script>
+</body>
+</html>
